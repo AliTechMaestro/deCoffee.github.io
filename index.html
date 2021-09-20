@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/gif" href="images/fevi-icon.jpg" sizes="16x16"/>
+    <title>DeCoffee</title>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="nav-section">
+            <div class="offcanvas-menu d-sm-none">
+                <a href="#">
+                    <i class="fa fa-bars" onclick="showSideMenuBar()"></i>
+                </a>
+            </div>    
+        </div>
+    </div>    
+    <div class="Offcanvas-Nav" id="SideMenuBar">
+        <div class="closeicon">
+            <i class="fa fa-times" onclick="hideSideMenuBar()"></i>
+        </div>
+        <div class="offcanvas-logo text-center py-2">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="OffcanvasMenubar py-4">
+            <ul class="list-unstyled text-center">
+                <li><a href="#" class="text-decoration-none">HOME</a></li>
+                <li><a href="#About-Us" class="text-decoration-none">ABOUT US</a></li>
+                <li><a href="#" class="text-decoration-none">SERVICES</a></li>
+                <li><a href="#Menu" class="text-decoration-none">MENU</a></li>
+                <li><a href="#Contact" class="text-decoration-none">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="Nav-barContact py-4 text-center">
+            <div class="Order-btn ">
+                <button class="btn  btn-outline-dark py-3 px-5">Order Online</button>
+            </div>
+            <div class="Contact-address">
+                <p>
+                    +10 (88) 237 3782<br>
+                    88/A, Green lane, Monaka <br>CA 92032
+                </p>
+            </div>
+            <div class="socialicons-Nav">
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container d-sm-block d-none">
+            <div class="row text-sm-center text-md-start">
+                <div class="col-md-4 d" id="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6" id="MenuBar">
+                    <ul class="list-unstyled my-md-5 mt-4">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="list-inline-item"><a href="#About-Us" class="text-decoration-none">About Us</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none">Services</a></li>
+                        <li class="list-inline-item"><a href="#Menu" class="text-decoration-none">Menu</a></li>
+                        <li class="list-inline-item"><a href="#Contact" class="text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-none d-md-block my-md-5">
+                    <div class="socialicons">
+                        <a href="#" class="text-decoration-none mx-1">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none mx-1">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none mx-1">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="banner">
+        <div class="container">
+            <div class="row py-5" id="HeroText">
+                <div class="col-4text-white user-select-none mt-5">
+                    <h3>
+                        Handmade <span class="cookies">"Cookies"</span> and Coffee Delights
+                    </h3>    
+                </div>
+            </div>
+            <div class="row" id="TextDesc">
+                <div class="col-md-6 text-white user-select-none">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nemo deserunt. Placeat vel
+                        nihil voluptatibus perferendis sit, fuga hic quod possimus, natus commodi eligendi earum?</p>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-secondary py-3 px-5" id="Button">
+                        Our Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section1" id="About-Us">
+        <div class="container">
+            <div class="row justify-content-md-between justify-content-center text-center">
+                <div class="col-md-6">
+                    <p class="main-title">
+                        A boutique and fun cafe that brought together coffee cultures of the whole world in California.
+                    </p>
+                    <p class="lead">
+                        Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam
+                        sodales, porttitor lectus vitae, consectetur est. Curabitur ac erat vel mi auctor gravida eu in
+                        ex. Nulla lorem turpis, faucibus vitae condimentum non, auctor id urna. Maecenas vitae volutpat
+                        magna.
+                    </p>
+                    <img src="images/sign.jpg" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6 Hours mt-3">
+                            <h4>
+                                Hours
+                            </h4>
+                            <p class="day my-3">
+                                Monday & Sunday<br>
+                                <span class="time">
+                                    11:00 am – 4:00 am
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 Dinner mt-3">
+                            <h4>
+                                Dinner
+                            </h4>
+                            <p class="day my-3">
+                                Monday & Sunday<br>
+                                <span class="time">
+                                    11:00 am – 4:00 am
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-6 desc Lunch mt-3">
+                            <h4>
+                                Lunch
+                            </h4>
+                            <p class="day my-3">
+                                Monday & Sunday<br>
+                                <span class="time">
+                                    11:00 am – 4:00 am
+                                </span>
+                            </p>
+                        </div>
+                        <div class="offset-5 col-lg-6 d-lg-block d-none sideimg">
+                            <img src="images/sideimg.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Section2">
+        <div class="Banner-img">
+            <img src="images/img4.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="MenuSection" id="Menu">
+        <div class="sidemenu d-md-block text-center d-none">
+            <img src="images/menuicon.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="Menuheader my-4 text-center">
+                <h4 class="display-6">Our Menu</h4>
+                <div class="headerdesc d-flex justify-content-center">
+                    <p class="w-50">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet
+                        quam sodales, porttitor lectus vitae, consectetur.</p>
+                </div>
+            </div>
+            <div class="row Menuitems text-md-start text-center">
+                <div class="col-md-4 Coffee">
+                    <h5 class="title">
+                        Coffee
+                    </h5>
+                    <h6 class="sub-desc">
+                        Proin risus erat ……………………<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Bacon, Ham, Cumberland, Sausage, Chorizo ……………………….………..<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        "Full" Paris Breakfast 17"………………………......<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Proin risus erat……………………….………..<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Three Egg Omelet 17 <br>……………………….………........<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                </div>
+                <div class="col-md-4 Drinks">
+                    <h5 class="title">
+                        Drinks
+                    </h5>
+                    <h6 class="sub-desc">
+                        Proin risus erat ……………………<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Bacon, Ham, Cumberland, Sausage, Chorizo ……………………….………..<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        "Full" Paris Breakfast 17"………………………......<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Proin risus erat……………………….………..<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Three Egg Omelet 17 <br>……………………….………........<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                </div>
+                <div class="col-md-4 Fast Food">
+                    <h5 class="title">
+                        Fast Food
+                    </h5>
+                    <h6 class="sub-desc">
+                        Proin risus erat ……………………<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Bacon, Ham, Cumberland, Sausage, Chorizo ……………………….………..<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        "Full" Paris Breakfast 17"………………………......<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Proin risus erat……………………….………..<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                    <h6 class="sub-desc">
+                        Three Egg Omelet 17 <br>……………………….………........<span class="price">($5)</span>
+                    </h6>
+                    <p class="sub-titledesc">
+                        Sed ultrices nisl velit
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="SectionService">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-code-fork"></i>
+                    </div>
+                    <div class="servicedesc">
+                        <p>Nulla nec tortor vitae eros iaculis hendrerit aliquet non urna. Nulla sit amet</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="servicedesc">
+                        <p>Nulla nec tortor vitae eros iaculis hendrerit aliquet non urna. Nulla sit amet</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-thumbs-o-up"></i>
+                    </div>
+                    <div class="servicedesc">
+                        <p>Nulla nec tortor vitae eros iaculis hendrerit aliquet non urna. Nulla sit amet</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="servicedesc">
+                        <p>Nulla nec tortor vitae eros iaculis hendrerit aliquet non urna. Nulla sit amet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ServiceImages">
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-sm-6 serviceimg img1">
+                    <img src="images/drink.jpg" alt="">
+                </div>
+                <div class="col-sm-5 serviceimg">
+                    <img src="images/waiter.jpg" alt="">
+                </div>
+                <div class="col-sm-5 my-sm-4 serviceimg">
+                    <img src="images/customer.jpg" alt="">
+                </div>
+                <div class="col-sm-6 my-sm-4 serviceimg">
+                    <img src="images/dealer.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Customer mt-5">
+        <div class="cstmrTitle text-center">
+            <h2>Love from Customers</h2>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="container">
+                    <div class="carousel-item active">
+                        <div class="response py-4">
+                            <p class="w-55">“The types of tea are white tea, green tea, yellow tea, oolong tea, black tea, and pu-erh tea. When you have the title white tea or green tea, you’re actually describing the process by which it has been made,” Woollard says."</p>
+                        </div>
+                        <div class="responseImg">
+                            <div class="image">
+                                <img src="images/response.jpg" alt="">
+                            </div>    
+                            <div class="authordesc my-3">
+                                <h6>Popper Cherry</h6>
+                                <p>Designer at Colorlib</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="response  py-4">
+                            <p>“The types of tea are white tea, green tea, yellow tea, oolong tea, black tea, and pu-erh tea. When you have the title white tea or green tea, you’re actually describing the process by which it has been made,” Woollard says."</p>
+                        </div>
+                        <div class="responseImg">
+                            <div class="image">
+                                <img src="images/response.jpg" alt="">
+                            </div>   
+                            <div class="authordesc my-3">
+                                <h6>Popper Cherry</h6>
+                                <p>Designer at Colorlib</p>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="response  py-4">
+                            <p>“The types of tea are white tea, green tea, yellow tea, oolong tea, black tea, and pu-erh tea. When you have the title white tea or green tea, you’re actually describing the process by which it has been made,” Woollard says."</p>
+                        </div>
+                        <div class="responseImg">
+                            <div class="image">
+                                <img src="images/response.jpg" alt="">
+                            </div>    
+                            <div class="authordesc my-3">
+                                <h6>Popper Cherry</h6>
+                                <p>Designer at Colorlib</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="imageSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 d-md-block d-none p-0">
+                    <div class="clientimg">
+                        <img src="images/coffegirl.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 p-0">
+                    <div class="clientimg ">
+                        <img src="images/bottles.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 p-0">
+                    <div class="clientimg">
+                        <img src="images/coffe.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-3 d-md-block d-none p-0">
+                    <div class="clientimg">
+                         <img src="images/bottles.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col userid text-center">
+                    <a href="#" class="text-decoration-none">
+                        @da_coffee98
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-widget" id="Contact">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4 text-center contact">
+                    <h5>Contact Us</h5>
+                    <p>
+                        +10 (88) 237 3782 <br>
+                        88/A, Green lane, Monaka <br>CA 92032
+                    </p>
+                    <div class="socialicons my-4">
+                        <a href="#" class="text-decoration-none mx-1">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none mx-1">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none mx-1">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center footer-widgetLogo">
+                    <div class="footerlogo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footerlogo-desc">
+                        <p>Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center Nav">
+                    <h5>Navigation</h5>
+                    <div class="Nav-barIcons d-flex flex-column ">
+                        <a href="#" class="text-decoration-none">Home</a>
+                        <a href="#" class="text-decoration-none">About Us</a>
+                        <a href="#" class="text-decoration-none">Gallery</a>
+                        <a href="#" class="text-decoration-none">Menu</a>
+                        <a href="#" class="text-decoration-none">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrightSection">
+        <div class="container">
+            <div class="row text-center pt-3">
+                <div class="col text-white align-content-center">
+                    <p> &copy;copyright 2019. All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="upbarBtn">
+        <a href="#header">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#header{
+    background-color: #202738!important;
+}
+#MenuBar ul li a{
+    color: #C3D4E4;
+}
+#MenuBar ul li a:after{
+    content: " ";
+    display: block;
+    height: 3px;
+    margin: auto;
+    width: 0px;
+    background-color: #C46B48;
+}
+#MenuBar ul li a:hover::after{
+    width: 100%;
+    transition: 0.4s;
+}
+.socialicons a:hover{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    color: #C46B48;
+}
+.phone{
+    color: #C3D4E4;
+}
+.socialicons a{
+    color: #C3D4E4;
+    display: inline-block;
+}
+#banner{
+    background-image:  url("../images/testimonial-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0px;
+    position: relative;
+}
+ .offcanvas-menu{
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    padding: 30px 0px;
+    left: 5%;
+} 
+ .offcanvas-menu a{
+   color: white;
+   font-size: 35px;
+}
+.Offcanvas-Nav{
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    background-color: #202738;
+    padding: 20px 30px;
+    height: 100vh;
+    overflow: auto;
+    display: none;
+} 
+/* Designing Close btn */
+.closeicon i{
+    color: white;
+    font-size: 20px;
+}
+.closeicon i:hover{
+    color: #C46B48;
+    cursor: pointer;
+}
+.OffcanvasMenubar ul li{
+    padding: 10px 0px;
+    position: relative;
+}
+.OffcanvasMenubar ul li a{
+    color: #C3D4E4;
+}
+.Order-btn button{
+    border-radius: unset;
+    color: white;
+    background-color: transparent;
+    border-color: #C46B48;
+}
+.Order-btn button:hover{
+    background-color: #C46B48;
+    transition-duration: 0.5s;
+}
+.Contact-address{
+    padding: 25px 0px;
+}
+.Contact-address p{
+    color: #C3D4E4;
+}
+.socialicons-Nav{
+    display: block;
+}
+.socialicons-Nav a{       
+    margin: 0px 10px;
+    color: #C3D4E4;
+}
+.socialicons-Nav a i:hover{
+    transform: rotateY(180deg)!important;
+    transition: 0.5s;
+    color: #C46B48;
+}
+
+#HeroText{
+    font-family: 'Shippori Mincho', serif;
+}
+#HeroText h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#TextDesc{
+    font-family: 'Shippori Mincho', serif;
+}
+.cookies{
+    color: #C46B48;
+}
+#Button {
+    border-radius: unset;
+    font-size: 16px;
+    background-color: #C46B48;  
+    color: white;
+    border-color: #C46B48;
+}
+#Button:hover{
+    background-color: transparent;
+    border-color: #C46B48;
+    color: #C46B48;
+    transition: 0.5s;
+}
+/* Section 1 */
+.Section1{
+    padding: 80px 0px;
+}
+.main-title{
+    color: black;
+    font-size: 35px;
+}
+.Hours h4{
+    color: #C46B48;
+    font-family: "Shippori Mincho",serif;
+    font-weight: bold;
+}
+.day{
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.time{
+    font-weight: lighter;
+    color: #636363;
+    font-size: 13px;
+}
+.Dinner h4{
+    color: #C46B48;
+    font-family: "Shippori Mincho",serif;
+    font-weight: bold;
+}
+/* Desc */
+.desc  p{
+    color: #636363;
+    font-weight: 400;
+}
+.Lunch h4{
+    color: #C46B48;
+    font-family: "Shippori Mincho",serif;
+    font-weight: bold;
+}
+.Lunch p{
+    color: unset;
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Sideimg{
+    margin-top: -200px;
+}
+.Banner-img{
+    height: 500px;
+    background-attachment: fixed;
+}
+.Banner-img img{ 
+    width: 100%;
+    height: 100%;
+}
+/* Menu Section  */
+.MenuSection{
+    padding: 80px 0px;
+}
+.Menuheader{
+    margin-top: -130px;
+}
+.headerdesc p{
+    color: #636363;
+}
+.title{
+    padding: 30px 0px;
+    color: #C46B48;
+    font-family: "Shippori Mincho",serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.sub-desc{
+    color: #636363;
+    font-weight: bold;
+}
+.sub-titledesc{
+    font-weight: lighter;
+    color: #636363;
+}
+.price{
+    color: #C46B48;
+}
+/* Service Section */
+.SectionService{
+    background-color: #1F2635;
+    padding: 60px 0px 200px 0px;
+}
+.icon{
+    font-size: 70px;
+    color: #C3D4E4;
+}
+.icon:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+.servicedesc p{
+    color: white;
+}
+.serviceimg{
+    margin-top: -15rem;
+}
+.serviceimg img{
+    width: 100%;
+    height: auto;
+}
+/* Customer Section */
+.Customer{
+    margin-top: 20px;
+    padding: 50px 0px;
+    background-color: #C3D4E4;
+}
+.response{
+    color: #636363;
+    font-weight: 600;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 10%!important;
+}
+.Resp-name{
+    color: #C46B48;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.authordesc h6{
+    color: #C46B48;
+}
+.authordesc p{
+    color: #636363;
+}
+.cstmrTitle{
+    font-size: 30px;
+    font-family: "Shippori Mincho",serif;
+}
+/* Client Image Section */
+.imageSection{
+    padding: 60px 0px;
+    position: relative;
+}
+.clientimg img{
+    width: 100%;
+    height: auto;
+}
+.userid{
+    position: absolute;
+    top: 45%;
+}
+.userid a{
+    padding: 15px 25px;
+    background-color: white;
+    border: 2px solid #C46B48;
+    color: #C46B48;
+}
+/* Footer Widget Section */
+.footer-widget{
+    background-color: #1F2635;
+}
+.contact{
+    padding: 40px 0px;
+}
+.contact h5{
+    color: white;
+    font-family: "Shippori Mincho",serif;
+    font-size: 30px;
+}
+.contact p{
+    color: #C3D4E4;
+    padding: 20px 0px;
+}
+.footerlogo-desc p{
+    color: #C3D4E4;
+    padding: 20px 0px;
+}
+.footer-widgetLogo{
+    border: 1px solid rgba(195, 212, 228, 0.3);
+    border-top: none;
+    border-bottom: none;
+}
+.Nav{
+    padding: 40px 0px;
+}
+.Nav h5{
+    color: white;
+    font-family: "Shippori Mincho",serif;
+    font-size: 30px;
+}
+.Nav-barIcons {
+    padding: 5px 0px
+}
+.Nav-barIcons a{
+    color: #C3D4E4;
+    padding: 10px 0px;
+}
+.Nav-barIcons a:hover{
+    text-decoration: underline!important;
+    color: #C46B48;
+    transition: 0.5s;
+}
+/* Scroll Bar*/
+ ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: black;
+
+  } 
+/* Copyright Section */
+.copyrightSection{
+    background-color: #1a202e;
+}
+body{
+    position: relative;
+}
+/* Upbar BTN */
+.upbarBtn{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+.upbarBtn a{
+    padding: 15px;
+    color: white;
+    background-color: #05072E;
+    border-radius: 10px;
+}
+.upbarBtn a i{
+    font-size: 25px;
+}
+
+
+/* Media Query for Extra-Small Screens */
+@media (max-width:768px){
+    .contact{
+        padding: 30px 0px;
+    }
+    .Nav{
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width:576px){
+    .serviceimg{
+        margin-top: 0rem;
+        margin-bottom: 20px;
+    }
+    .SectionService{
+        background-color: #1F2635;
+        padding: 60px 0px;
+    }
+
+  
+}
